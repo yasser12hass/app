@@ -1,0 +1,71 @@
+/* style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 30px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: right;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    height: 50px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+input[type="text"]:focus {
+    border: 2px solid #25212F; /* لون أخضر عند التركيز */
+    outline: none;
+}
+
+button {
+    background-color: #25212F;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+
+img {
+    max-width: 150px;
+    margin: 10px auto 20px;
+    display: block;
+    border: 3px solid #25212F; /* إطار أخضر */
+    border-radius: 50%; /* يجعل الزوايا ناعمة */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* ظل خفيف */
+}
