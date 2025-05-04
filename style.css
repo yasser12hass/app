@@ -31,7 +31,8 @@ label {
     font-weight: bold;
 }
 
-input[type="text"] {
+input[type="text"],
+select {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -39,13 +40,18 @@ input[type="text"] {
     border-radius: 25px;
     box-sizing: border-box;
     height: 50px;
-  font-size: 20px;
-  font-weight: 700;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #fff;
+    color: #333;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
-
-input[type="text"]:focus {
-    border: 2px solid #25212F; /* لون أخضر عند التركيز */
+input[type="text"]:focus,
+select:focus {
+    border: 2px solid #25212F;
     outline: none;
 }
 
@@ -58,14 +64,18 @@ button {
     cursor: pointer;
     width: 100%;
     font-size: 16px;
+    transition: background-color 0.3s;
 }
 
+button:hover {
+    background-color: #3d394b;
+}
 
 img {
     max-width: 150px;
     margin: 10px auto 20px;
     display: block;
-    border: 3px solid #25212F; /* إطار أخضر */
-    border-radius: 50%; /* يجعل الزوايا ناعمة */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* ظل خفيف */
+    border: 3px solid #25212F;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
