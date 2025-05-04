@@ -17,41 +17,8 @@
         <input type="text" name="Your_name" id="name" required>
         <br><br>
 
-        <label>مواليد الطالب</label><br>
-
-        <select name="birthday" required>
-            <option value="" disabled selected>اليوم</option>
-            <script>
-                for (let i = 1; i <= 31; i++) {
-                    document.write(`<option value="${i}">${i}</option>`);
-                }
-            </script>
-        </select>
-
-        <select name="birthMonth" required>
-            <option value=""disabled selected>الشهر</option>
-            <option value="1">يناير</option>
-            <option value="2">فبراير</option>
-            <option value="3">مارس</option>
-            <option value="4">أبريل</option>
-            <option value="5">مايو</option>
-            <option value="6">يونيو</option>
-            <option value="7">يوليو</option>
-            <option value="8">أغسطس</option>
-            <option value="9">سبتمبر</option>
-            <option value="10">أكتوبر</option>
-            <option value="11">نوفمبر</option>
-            <option value="12">ديسمبر</option>
-        </select>
-
-        <select name="birthYear" required>
-            <option value="" disabled selected >السنة</option>
-            <script>
-                for (let year = 2004; year <= 2010; year++) {
-                    document.write(`<option value="${year}">${year}</option>`);
-                }
-            </script>
-        </select>
+        <label for="barthda">مواليد الطالب</label><br>
+        <input type="date" name="birthday" id="barthda" required>
 
         <br><br>
         <button type="submit">إرسال</button>
