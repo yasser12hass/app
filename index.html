@@ -1,34 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>استمارة تسجيل </title>
+    <title>استمارة تسجيل</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>استمارة تسجيل الطلاب لمدرسة اعدادية العلامة  الكليني</h2>
+    <h2>استمارة تسجيل الطلاب لمدرسة اعدادية العلامة الكليني</h2>
 
-<img src="./٢٠٢٥٠٤١٨_١٤٤٠١٥.png" >
-
-
+    <img src="./٢٠٢٥٠٤١٨_١٤٤٠١٥.png" alt="شعار المدرسة">
 
     <form action="" method="POST" name="contact-form">
-        <label for="name">اسم الطالب  الرباعي</label>
- <input type="text" name="Your_name" id="name" required>
+        <label for="name">اسم الطالب الرباعي</label><br>
+        <input type="text" name="Your_name" id="name" required>
+        <br><br>
 
+        <label>مواليد الطالب</label><br>
 
-<br>
- <label for="darthda">موليد الطالب </label>
- <input type="text" name="barthday" id="darthda" required>
- <br>
- <button type="submit">send</button>
+        <select name="birthday" required>
+            <option value="">اليوم</option>
+            <script>
+                for (let i = 1; i <= 31; i++) {
+                    document.write(`<option value="${i}">${i}</option>`);
+                }
+            </script>
+        </select>
+
+        <select name="birthMonth" required>
+            <option value="">الشهر</option>
+            <option value="1">يناير</option>
+            <option value="2">فبراير</option>
+            <option value="3">مارس</option>
+            <option value="4">أبريل</option>
+            <option value="5">مايو</option>
+            <option value="6">يونيو</option>
+            <option value="7">يوليو</option>
+            <option value="8">أغسطس</option>
+            <option value="9">سبتمبر</option>
+            <option value="10">أكتوبر</option>
+            <option value="11">نوفمبر</option>
+            <option value="12">ديسمبر</option>
+        </select>
+
+        <select name="birthYear" required>
+            <option value="">السنة</option>
+            <script>
+                for (let year = 2004; year <= 2010; year++) {
+                    document.write(`<option value="${year}">${year}</option>`);
+                }
+            </script>
+        </select>
+
+        <br><br>
+        <button type="submit">إرسال</button>
     </form>
 
-
-
-<script src="java.js"></script>
+    <script src="java.js"></script>
 
 </body>
 </html>
