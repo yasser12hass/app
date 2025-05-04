@@ -2,10 +2,18 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxFxcbzXOyGie8ccfWvy3
 const form = document.forms['contact-form'];
 
 form.addEventListener('submit', e => {
-  e.preventDefault(); // ✅ تصحيح هنا
+  e.preventDefault();
+
+  // إظهار رسالة انتظار أثناء الإرسال
+  alert("يتم الآن إرسال المعلومات، الرجاء الانتظار...");
 
   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-    .then(response => alert("Thank you! Your form is sent successfully."))
-    .then(() => window.location.reload())
-    .catch(error => console.error('Error!', error.message)); // ✅ تصحيح هنا
+    .then(response => {
+      alert("تم إرسال الاستمارة بنجاح! شكراً لك.");
+      window.location.reload(); // إعادة تحميل الصفحة بعد الإرسال
+    })
+    .catch(error => {
+      console.error('حدث خطأ!', error.message);
+      alert("حدث خطأ أثناء الإرسال، حاول مرة أخرى.");
+    });
 });
