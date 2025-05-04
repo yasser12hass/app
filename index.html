@@ -20,7 +20,7 @@
         <label>مواليد الطالب</label><br>
 
         <select name="birthday" required>
-            <option value="">اليوم</option>
+            <option value="" disabled selected>اليوم</option>
             <script>
                 for (let i = 1; i <= 31; i++) {
                     document.write(`<option value="${i}">${i}</option>`);
@@ -29,7 +29,7 @@
         </select>
 
         <select name="birthMonth" required>
-            <option value="">الشهر</option>
+            <option value=""disabled selected>الشهر</option>
             <option value="1">يناير</option>
             <option value="2">فبراير</option>
             <option value="3">مارس</option>
@@ -45,7 +45,7 @@
         </select>
 
         <select name="birthYear" required>
-            <option value="">السنة</option>
+            <option value="" disabled selected >السنة</option>
             <script>
                 for (let year = 2004; year <= 2010; year++) {
                     document.write(`<option value="${year}">${year}</option>`);
